@@ -1,0 +1,34 @@
+John, Smith, Computer Science, Sophomore, 1999-05-15
+John, Smith, Computer Science, Sophomore, 1999-05-14
+Emily, Johnson, Biology, Junior, 2000-10-20
+Michael, Williams, Psychology, Senior, 1998-03-10
+Sarah, Davis, Engineering, Freshman, 2003-07-05
+David, Brown, Business, Senior, 1997-12-30
+Michael, Williams, Psychology, Senior, 1998-03-10
+John, Smith, Computer Science, Sophomore, 1999-05-15
+Sarah, Davis, Engineering, Freshman, 2003-07-05
+Emily, Smith, Computer Science, Sophomore, 2000-03-15
+Daniel, Johnson, Biology, Junior, 1999-08-20
+Sophia, Martinez, Psychology, Senior, 1998-11-10
+Alexander, Brown, Engineering, Freshman, 2004-01-05
+Olivia, Williams, Business, Senior, 1997-07-30
+Ethan, Taylor, Mathematics, Junior, 1999-06-25
+Ava, Anderson, English, Sophomore, 2001-09-12
+Noah, Hernandez, History, Senior, 1998-04-18
+Mia, Gonzalez, Chemistry, Freshman, 2003-12-22
+Liam, Nelson, Economics, Junior, 1999-10-01
+Isabella, White, Physics, Sophomore, 2000-02-08
+James, Thomas, Sociology, Senior, 1998-05-13
+Charlotte, Lee, Political Science, Freshman, 2003-11-07
+Benjamin, Walker, Art, Junior, 1999-07-29
+Amelia, Perez, Linguistics, Sophomore, 2000-04-04
+Lucas, Roberts, Philosophy, Senior, 1998-08-17
+Harper, Clark, Anthropology, Freshman, 2004-02-03
+Mason, Lewis, Environmental Science, Junior, 1999-09-28
+Evelyn, Turner, Film Studies, Sophomore, 2000-01-10
+Jacob, Scott, Music, Senior, 1998-06-24
+Abigail, Phillips, Theater, Freshman, 2004-05-02
+Michael, Baker, Communications, Junior, 1999-11-20
+Sofia, Young, Neuroscience, Sophomore, 2000-08-14
+Matthew, King, Religious Studies, Senior, 1998-03-29
+William, Martinez, Architecture, Freshman, 2004-09-09
