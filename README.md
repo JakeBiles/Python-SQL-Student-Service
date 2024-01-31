@@ -17,11 +17,11 @@
 |     Grade Checker     |  Not Ready |                      |               |   Allow a Student to check GPA   | 
 
 # Primary Features of this project
--On startup an admin will be able to select which database to connect to.
--Once connected to the desired database, assuming creditintials are correct, the admin can then select Admin, Teacher or Student mode.
--Student mode will allow users to enter credintials to check grades or recieve their student ID.
--Teacher mode will allow users to enter credintials to enter or modify grades.
--Admin mode will allow modify student data.
+- On startup an admin will be able to select which database to connect to.
+- Once connected to the desired database, assuming creditintials are correct, the admin can then select Admin, Teacher or Student mode.
+- Student mode will allow users to enter credintials to check grades or recieve their student ID.
+- Teacher mode will allow users to enter credintials to enter or modify grades.
+- Admin mode will allow modify student data.
 
 # Primary Language Used
 This system primarly uses the Python language using the MYSQLConnector module.
