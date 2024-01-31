@@ -1,6 +1,5 @@
 import globals
 
-
 def printMenu():
     count = 1
     print("What would you like to do?")

@@ -18,50 +18,63 @@ for error, text in possible_errors.items():
 def connectHost():
     try:
         host = str(input("Enter the host ip: "))
-        db = mysql.connector.MySQLConnection(
+        database = mysql.connector.MySQLConnection(
             host=host,
             user="default"
         )
         print("Host confirmed!")
-        return db
+        return database
 
     except mysql.connector.Error as error:
         print(error_dict[error.errno], "Error:", error)
 
 # user login -- left off here (try and ensure pass/user match)
-def databaseLogin(db: mysql.connector.MySQLConnection):
+def databaseLogin(database: mysql.connector.MySQLConnection):
     try:
-        cursor = db.cursor()
         user = str(input("Enter the username: "))
         password = str(input("Enter the password for " + user + ": "))
+        database.cmd_change_user(user,password)
         print("Successful login")
+        return database
 
     except mysql.connector.Error as error:
         print(error_dict[error.errno], "Error:", error)
+        database = database = mysql.connector.MySQLConnection( ## Added
+            host=database._host,
+            user="default",
+        )
+        return database
 
 # Connect to database
-def connectDatabase(db: mysql.connector.MySQLConnection):
+def connectDatabase(database: mysql.connector.MySQLConnection):
     try:
         databaseName = str(
             input("Enter which database you would like to access: "))
-        db.database = databaseName
+        database.database = databaseName
 
     except mysql.connector.Error as error:
         print(error_dict[error.errno], "Error:", error)
 
 # Authenticate Connection
-def databaseConnect():
-    db = None
+def databaseConnect(): # Version 1
+    database = None
+    attempts = 0
     
-    while db == None:
-        db = connectHost()
-    while db.user == "default":
-        databaseLogin(db)
-    while db.database == None:
-        connectDatabase(db)
+    while database == None:
+        database = connectHost()
+        
+    while database.user == "default" and attempts < 3:
+        database = databaseLogin(database)
+        attempts = attempts + 1
+        
+    while database.database == None and attempts < 3:
+        connectDatabase(database)
     
-    print("Connection to", db.database, "successful!")
-    return db
+    if attempts < 3:
+        print("Connection to", database.database, "successful!")
+        return database
+    else: 
+        print("Failed to connect to database")
 
 # Add Students from file
 def addStudents(filename: str, database: mysql.connector.MySQLConnection):
